@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const footerNavigation = {
   support: [
     { name: 'Documentation', href: '#' },
@@ -26,7 +28,7 @@ const Footer = () => {
           Footer
         </h2>
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <img
+          <Image
             className="h-7"
             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
             alt="Company name"

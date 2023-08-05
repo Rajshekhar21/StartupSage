@@ -5,7 +5,8 @@ import CreateProfileStartup from '@/page-components/CreateProfile/CreateProfileS
 import Head from 'next/head';
 
 const FeedPage = () => {
-  const { data, error, mutate } = useCurrentUser();
+  const { data } = useCurrentUser();
+  // const { data, error, mutate } = useCurrentUser();
 
   const user = data?.user?.role;
   console.log('user', user);
